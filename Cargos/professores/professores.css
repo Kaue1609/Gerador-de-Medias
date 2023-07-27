@@ -3,9 +3,13 @@ body {
     background-color: bisque;
 }
 
-#bloco-de-notas {
+.bloco-de-notas {
     margin-left: 20px;
     background-color: rgb(255, 255, 145);
-    height: 200px;
-    width: 300px;
+    height: 175px;
+    width: 500px;
+}
+.medias-bloco {
+    height: 50px;
+    width: 500px;
 }

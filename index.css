@@ -1,0 +1,49 @@
+body {
+    margin: 0px;
+}
+
+#container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    grid-template-areas:
+    "topo"
+    "meio"
+    "sopé";
+}
+
+#cabeçalho {
+    grid-area: topo;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(30, 136, 155);
+}
+#titulo-pagina {
+    margin-left: 30px;
+}
+
+#caixa-de-login {
+    grid-area: meio;
+    height: 477px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(223, 82, 17);
+}
+
+.btn-entrada {
+    width:200px;
+    height: 80px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    border:none;
+}
+
+#sopé {
+    grid-area: sopé;
+    height: 100px;
+    background-color: rgb(30, 136, 155);
+}
