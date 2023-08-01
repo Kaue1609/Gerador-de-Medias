@@ -11,22 +11,23 @@
     <div class="bloco-de-notas">
         <h1>Notas do Aluno por Avaliação</h1>
         <label>Primeira Avaliação</label>
-        <input id="nota1" type="text" value="2">
+        <input id="nota1" type="text">
         <br>
         <label>Segunda Avaliação</label>
-        <input type="text" id="nota2">
+        <input id="nota2" type="text">
         <br>
         <label>Terceira Avaliação</label>
-        <input type="text" id="nota3">
+        <input id="nota3"type="text">
     </div>
 
+    <button id="calc-media-tri">Calcular</button>
     <div class="medias-bloco">
         <h3>Média Trimestral</h3>
-        <h1>0</h1>
+        <h1 id="media-tri">0</h1>
     </div>
 
     <div class="bloco-de-notas">
-        <h1>Notas do Aluno por Trismetre</h1>
+        <h1>Médias do Aluno por Trismetre</h1>
         <label>primeiro Trimestre</label>
         <input type="text" id="media1">
         <br>
@@ -37,9 +38,10 @@
         <input type="text" id="media3">
     </div>
 
+    <button id="calc-media-anual">Calcular</button>
     <div class="medias-bloco">
         <h3>Média Anual</h3>
-        <h1>0</h1>
+        <h1 id="media-ano">0</h1>
     </div>
 
     <script src="professores.js"></script>
