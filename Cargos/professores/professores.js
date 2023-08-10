@@ -13,6 +13,9 @@ function mediaTrimestral() {
     console.log(mediaTrimestral);
     let mediaTri = document.getElementById('media-tri')
     mediaTri.innerText = mediaTrimestral
+    if(primeiraNota = undefined) {
+        return 0
+    }
     return mediaTrimestral
 }
 
@@ -26,6 +29,13 @@ function mediaTrimestral() {
 let botaoDeCalcularMediaAnual = document.getElementById('calc-media-anual')
 botaoDeCalcularMediaAnual.addEventListener('click', () => {
     mediaAnual()
+    /*Sweet Alert*/
+    Swal.fire({
+        title: 'Média Feita!',
+        imageUrl: 'https://i.fbcd.co/products/resized/resized-750-500/b8c6e8130e5374f4e5fdc903feaad917814bd58caef6a8d9a2c48f20b983bc33.webp',
+        imageWidht: '200',
+        imageHeight: '200',
+    })
 })
 
 /* Função para calcular média Anual*/
