@@ -2,24 +2,46 @@
     let botaoDeCalcularMediaTrimestral = document.getElementById('calc-media-tri')
     botaoDeCalcularMediaTrimestral.addEventListener('click', () => {
         mediaTrimestral()
+            /*Toastify*/
+        Toastify({
+            text: "Média gerada",
+            duration: 1000,
+            position: "right",
+            gravity: "bottom",
+        }).showToast()
     })
 
 /* Função para calcular média Trimestral*/
 function mediaTrimestral() {
-    let primeiraNota = document.getElementById("nota1").value
-    let segundaNota = document.getElementById("nota2").value
-    let terceiraNota = document.getElementById("nota3").value
-    const mediaTrimestral = parseInt( ( parseFloat(primeiraNota) + parseFloat(segundaNota) + parseFloat(terceiraNota) ) / 3)
+    let notasDeAvaliacoes = document.getElementsByClassName("nota")
+    console.log(notasDeAvaliacoes);
+    let nota1 = notasDeAvaliacoes[0].value
+    console.log(nota1)
+    let nota2 = notasDeAvaliacoes[1].value
+    console.log(nota2)
+    const mediaTrimestral = parseInt( (parseFloat(nota1) + parseFloat(nota2)) / notasDeAvaliacoes.length)
     console.log(mediaTrimestral);
     let mediaTri = document.getElementById('media-tri')
     mediaTri.innerText = mediaTrimestral
-    if(primeiraNota = undefined) {
+    if(nota1 && nota2 === undefined || null) {
         return 0
     }
     return mediaTrimestral
 }
 
+/*Função para cirar novo input*/
+ let botaoDeCriarInputs = document.getElementById('create')
+ botaoDeCriarInputs.addEventListener('click', () => {
+    criarInput()
+ })
 
+function criarInput() {
+    let caixaDeNotas = document.getElementsByClassName("caixa-de-notas")
+    let input = document.createElement("input")
+    input.classList.add('in-put', 'nota')
+    input.value = 0
+    caixaDeNotas.appendChild(input)   
+}
 /**/
 /**/
 /**/
@@ -29,13 +51,13 @@ function mediaTrimestral() {
 let botaoDeCalcularMediaAnual = document.getElementById('calc-media-anual')
 botaoDeCalcularMediaAnual.addEventListener('click', () => {
     mediaAnual()
-    /*Sweet Alert*/
-    Swal.fire({
-        title: 'Média Feita!',
-        imageUrl: 'https://i.fbcd.co/products/resized/resized-750-500/b8c6e8130e5374f4e5fdc903feaad917814bd58caef6a8d9a2c48f20b983bc33.webp',
-        imageWidht: '200',
-        imageHeight: '200',
-    })
+    /*Toastify*/
+    Toastify({
+        text: "Média gerada",
+        duration: 1000,
+        position: "right",
+        gravity: "bottom",
+    }).showToast()
 })
 
 /* Função para calcular média Anual*/

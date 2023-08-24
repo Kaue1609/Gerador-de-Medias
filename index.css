@@ -20,30 +20,68 @@ body {
     align-items: center;
     background-color: rgb(30, 136, 155);
 }
-#titulo-pagina {
-    margin-left: 30px;
-}
 
-#caixa-de-login {
+#conteudo {
     grid-area: meio;
-    height: 477px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(223, 82, 17);
-}
-
-.btn-entrada {
-    width:200px;
-    height: 80px;
-    border-radius: 100px;
-    margin-bottom: 10px;
-    border:none;
+    background-image: url(imagens/papel\ pautado.avif);
+    background-size: cover;
 }
 
 #sopé {
     grid-area: sopé;
     height: 100px;
     background-color: rgb(30, 136, 155);
+}
+
+#titulo-pagina {
+    margin-left: 30px;
+    color: white;
+}
+
+#titulo{
+ align-self: center;
+ justify-self: center;
+}
+
+.bloco-de-notas {
+    margin-top: 15px;
+    margin-left: 40px;
+    height: 200px;
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    border:solid;
+}
+.caixa-de-notas {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.in-put {
+    height: 50px;
+    width: 40px;
+    background-color: transparent;
+}
+.in-put:hover {
+    border-color: rgb(84, 207, 255);
+    box-shadow: 7px 7px 20px rgb(84, 207, 255);
+}
+
+.create-btn{
+    height: 40px;
+    width: 150px;
+    margin-bottom: 20px;
+    border-radius: 100px;
+}
+
+.resultado {
+    height: 200px;
+}
+.calc-media {
+    height: 40px;
+    width: 150px;
+    margin-bottom: 20px;
+    border-radius: 100px;
 }

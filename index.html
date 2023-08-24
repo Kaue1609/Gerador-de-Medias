@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="uma página para professores e até mesmo alunos poderem calcular suas notas facilmente">
+    <meta name="keywords" content="Notas-escolares, Escola, nota, simulador, simulador-de-medias">
+    <link rel="shortcut icon" href="imagens/imagen - A+.jpg">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="index.css">
-    <title>Média Simulator</title>
+    <title>Médias Simulator</title>
 </head>
 
 <body>
@@ -13,17 +17,53 @@
     <div id="container">
 
         <header id="cabeçalho">
-            <h1 id="titulo-pagina">Simulador de Médias Escolares</h1>
+            <h1 id="titulo-pagina">Simulador de Médias</h1>
         </header>
 
-        <div id="caixa-de-login">
-            <h1>Entrar como...</h1>
-            <a href="Cargos/Alunos/alunos.html"><button class="btn-entrada">Aluno</button></a>
-            <a href="Cargos/professores/professores.html"><button class="btn-entrada">Professor</button></a>
+        <div id="conteudo">
+            <div class="bloco-de-notas">
+                <h1 id="titulo">Notas por Avaliação</h1>
+                <div class="caixa-de-notas">
+                    <input class="nota in-put" type="text" value="0">
+                    <input class="nota in-put" type="text" value="0">
+                </div>
+            </div>
+            <div class="caixa-de-botoes">
+                <button id="calc-media-tri" class="calc-media">Calcular/gerar</button>
+                <button id="add" class="add-btn">Adicionar</button>
+                <button id="create" class="create-btn">Criar</button>
+            </div>
+            <div class="resultado">
+                <h3>Média</h3>
+                <h1 id="media-tri">0</h1>
+            </div>
+        
+            <div class="bloco-de-notas">
+                <h1 id="titulo">Média Final</h1>
+                <div class="caixa-de-notas">
+                    <input class="in-put" id="media1" type="text" value="0">
+                    <input class="in-put" id="media2" type="text" value="0">
+                </div>
+            </div>
+            <div class="caixa-de-botoes">
+                <button id="calc-media-anual" class="calc-media">Calcular</button>
+                <button id="add-2" class="add-btn">Adicionar</button>
+                <button id="create-2" class="create-btn">Criar</button>
+            </div>
+            <div class="resultado">
+                <h3>Média Anual</h3>
+                <h1 id="media-ano">0</h1>
+            </div>
+
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script src="index.js"></script>
         </div>
 
         <footer id="sopé">
-           <h3 id="nomeautor"></h3>
+           <p id="made-by">Autores: Kauê e jullyana</p>
+           <a></a>
+           <p>2023</p>
         </footer>
 
     </div>
