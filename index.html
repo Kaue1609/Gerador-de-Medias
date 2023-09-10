@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="uma página para professores e até mesmo alunos poderem calcular suas notas facilmente">
+    <meta name="description"
+        content="uma página para professores e até mesmo alunos poderem calcular suas notas facilmente">
     <meta name="keywords" content="Notas-escolares, Escola, nota, simulador, simulador-de-medias">
     <link rel="shortcut icon" href="imagens/imagen - A+.jpg">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="index.css">
-    <title>Médias Simulator</title>
+    <title>Médias Simulador</title>
 </head>
 
 <body>
@@ -17,10 +18,11 @@
     <div id="container">
 
         <header id="cabeçalho">
-            <h1 id="titulo-pagina">Simulador de Médias</h1>
+            <h1 id="titulo-pagina">Simulador de <strong id="titulo-pagina2">Médias Aritméticas Simples</strong></h1>
+            <img src="">
         </header>
 
-        <div id="conteudo">
+        <main id="conteudo">
             <div class="bloco-de-notas">
                 <h1 id="titulo">Notas por Avaliação</h1>
                 <div id="caixa-de-inputs" class="caixa-de-notas">
@@ -28,27 +30,29 @@
                     <input class="nota in-put" type="text" value="0">
                 </div>
             </div>
-            <div class="caixa-de-botoes">
-                <button id="calc-media-tri" class="calc-media">Calcular/gerar</button>
-                <button id="add" class="add-btn">Adicionar</button>
-                <button id="create" class="create-btn">Criar</button>
-                <button id="delete">Excluir</button>
+            <div id="caixa-de-botoes">
+                <button id="calc-media-tri" class="btns">Gerar</button>
+                <button id="create" class="btns">Criar</button>
+                <button id="delete" class="btns">Excluir</button>
             </div>
             <div class="resultado">
                 <h3>Média</h3>
-                <h1 id="media-tri">0</h1>
+                <h1 id="media">0</h1>
             </div>
 
             <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
             <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
             <script src="index.js"></script>
-        </div>
+        </main>
 
         <footer id="sopé">
-           <p id="made-by">Autores: Kauê e jullyana</p>
-           <a></a>
-           <p>2023</p>
-           <p>Politica de privacidade</p>
+            <p class="info">Autores: Kauê e jullyana</p>
+            <div id="caixa-dos-links">
+                <a href="https://github.com/Kaue1609"><img class="gitlogo" src="imagens/logo GitHub.png"></a>
+                <a href="https://github.com/jullyanaazevedo"><img class="gitlogo" src="imagens/logo GitHub.png"></a>
+            </div>
+            <p class="info">@2023</p>
+            <p class="info">Política de privacidade</p>
         </footer>
 
     </div>

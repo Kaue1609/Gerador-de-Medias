@@ -22,7 +22,7 @@ function mediaTrimestral() {
   
     const mediaTrimestral = (soma / notasDeAvaliacoes.length).toFixed(2);
   
-    let mediaTri = document.getElementById('media-tri');
+    let mediaTri = document.getElementById('media');
     mediaTri.innerText = mediaTrimestral;
   }
 
@@ -62,7 +62,7 @@ botaoDeExcluirInputs.addEventListener('click', () => {
     }
         /*Toastify*/
         Toastify({
-            text: "Caixa Excluida!",
+            text: "Caixa Excluída",
             duration: 1000,
             position: "right",
             gravity: "bottom",

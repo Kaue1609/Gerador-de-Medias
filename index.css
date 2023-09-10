@@ -1,87 +1,164 @@
-body {
-    margin: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Estilo para o contêiner principal */
 #container {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 3;
-    grid-template-areas:
-    "topo"
-    "meio"
-    "sopé";
-}
-
-#cabeçalho {
-    grid-area: topo;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    background-color: rgb(30, 136, 155);
-}
-
-#conteudo {
-    grid-area: meio;
-    display: flex;
-    flex-direction: column;
+    height: 100vh;
     background-image: url(imagens/papel\ pautado.avif);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
 }
 
-#sopé {
-    grid-area: sopé;
-    height: 100px;
-    background-color: rgb(30, 136, 155);
+/* Estilo para o cabeçalho */
+#cabeçalho {
+    background-color: #1E889B;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 #titulo-pagina {
-    margin-left: 30px;
-    color: white;
+    font-size: 36px;
+    font-weight: bold;
 }
 
-#titulo{
- align-self: center;
- justify-self: center;
+#titulo-pagina2 {
+    color: rgb(0, 189, 247);
 }
 
+/* Estilo para o conteúdo principal */
+#conteudo {
+    flex-grow: 1; 
+    padding: 20px;
+}
+
+/* Estilo para o bloco de notas */
 .bloco-de-notas {
-    margin-top: 15px;
-    margin-left: 40px;
-    height: 200px;
-    width: 1100px;
-    display: flex;
-    flex-direction: column;
-    border:solid;
+    height: 150px;
+    max-width: 600px; 
+    margin: 0 auto; 
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
 }
+
+/* Estilo para o título */
+#titulo {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center; 
+}
+
 .caixa-de-notas {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+
 .in-put {
     height: 50px;
-    width: 40px;
+    width: 80px;
     background-color: transparent;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 18px;
+    margin-right: 10px;
 }
+
 .in-put:hover {
     border-color: rgb(84, 207, 255);
-    box-shadow: 7px 7px 20px rgb(84, 207, 255);
+    box-shadow: 7px 7px 20px rgba(84, 207, 255, 0.2);
 }
 
-.create-btn{
+/* Estilo para os botões */
+#caixa-de-botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.btns {
+    flex-grow: 1;
     height: 40px;
-    width: 150px;
-    margin-bottom: 20px;
-    border-radius: 100px;
+    background-color: #1E889B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+    font-size: 16px;
 }
 
+.btns:hover {
+    background-color: #155FA0;
+}
+
+/* Estilo para o resultado */
 .resultado {
-    height: 200px;
+    text-align: center;
+    margin-top: 20px;
 }
-.calc-media {
-    height: 40px;
-    width: 150px;
+
+h3 {
+    font-size: 35px;
+    color: #333;
     margin-bottom: 20px;
-    border-radius: 100px;
+}
+
+#media {
+    font-size: 50px;
+    font-weight: bold;
+    color: #1E889B;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+}
+
+#media-tri:hover {
+    color: #155FA0; /* Nova cor de destaque */
+}
+
+/*footer*/
+#sopé {
+    grid-area: sopé;
+    background-color: rgb(30, 136, 155);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+}
+#caixa-dos-links {
+width: 150px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.gitlogo {
+    height:45px;
+    width: 45px;
+}
+.info {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px;
 }
